@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../public/logo.png";
 import toast from "react-hot-toast";
 import axios from "axios";
-import { BACKEND_URL } from "../utils/utils";
+import { BACKEND_URL } from "../utils/utils.js";
 function Dashboard() {
   const handleLogout = async () => {
     try {

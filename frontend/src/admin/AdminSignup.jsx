@@ -4,7 +4,7 @@ import logo from "../../public/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { BACKEND_URL } from "../utils/utils";
+import { BACKEND_URL } from "../utils/utils.js";
 
 export default function AdminSignup() {
   const [firstName, setFirstName] = useState("");

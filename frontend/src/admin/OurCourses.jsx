@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { BACKEND_URL } from "../utils/utils";
+import { BACKEND_URL } from "../utils/utils.js";
 export default function OurCourses(){
    
 const [courses, setCourses] = useState([]);

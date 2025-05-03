@@ -1,18 +1,18 @@
 import React from "react";
 import {Route, Navigate,Routes} from "react-router-dom";
-import Home from "./components/Home";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Home from "./components/Home.jsx";
+import Login from "./components/Login.jsx";
+import Signup from "./components/Signup.jsx";
 import  { Toaster } from 'react-hot-toast';
-import Courses from "./components/Courses";
-import Buy from "./components/Buy";
-import Purchases from "./components/Purchases";
-import AdminSignup from "./admin/AdminSignup";
-import AdminLogin from "./admin/AdminLogin";
-import Dashboard from "./admin/Dashboard";
-import CourseCreate from "./admin/CourseCreate";
-import UpdateCourse from "./admin/UpdateCourse";
-import OurCourses from "./admin/OurCourses";
+import Courses from "./components/Courses.jsx";
+import Buy from "./components/Buy.jsx";
+import Purchases from "./components/Purchases.jsx";
+import AdminSignup from "./admin/AdminSignup.jsx";
+import AdminLogin from "./admin/AdminLogin.jsx";
+import Dashboard from "./admin/Dashboard.jsx";
+import CourseCreate from "./admin/CourseCreate.jsx";
+import UpdateCourse from "./admin/UpdateCourse.jsx";
+import OurCourses from "./admin/OurCourses.jsx";
 
 function App(){
 

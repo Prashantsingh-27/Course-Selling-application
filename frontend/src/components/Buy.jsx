@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import { BACKEND_URL } from "../utils/utils";
+import { BACKEND_URL } from "../utils/utils.js";
 function Buy() {
   const { courseId } = useParams();
   const [loading, setLoading] = useState(false);
