@@ -12,7 +12,7 @@ import { HiMenu, HiX } from "react-icons/hi"; // Import menu and close icons
 import logo from "../../public/logo.png";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
- import { BACKEND_URL } from "../utils/utils.js";
+import { BACKEND_URL } from "../utils/utils.js";
 
 function Courses() {
   const [courses, setCourses] = useState([]);
@@ -81,9 +81,8 @@ function Courses() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-screen bg-neutral-300 w-64 p-5 transform z-10 transition-transform duration-300 ease-in-out ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 md:static`}
+        className={`fixed top-0 left-0 h-screen bg-neutral-300 w-64 p-5 transform z-10 transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+          } md:translate-x-0 md:static`}
       >
         <div className="flex items-center mb-10 mt-10 md:mt-0">
           <img src={logo} alt="Profile" className="rounded-full h-12 w-12" />
@@ -101,9 +100,15 @@ function Courses() {
               </a>
             </li>
             <li className="mb-4">
-              <a href="/purchases" className="flex items-center">
+              <Link
+                to={"/purchases"}
+                className="flex items-center"
+              >
                 <FaDownload className="mr-2" /> Purchases
-              </a>
+              </Link>
+              {/* <a href="/purchases" className="flex items-center">
+                <FaDownload className="mr-2" /> Purchases
+              </a> */}
             </li>
             <li className="mb-4">
               <a href="#" className="flex items-center">
@@ -113,7 +118,7 @@ function Courses() {
             <li>
               {isLoggedIn ? (
                 <Link to={"/"}
-                  
+
                   className="flex items-center"
                   onClick={handleLogout}
                 >
