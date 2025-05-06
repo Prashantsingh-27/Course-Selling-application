@@ -132,14 +132,9 @@ function Home() {
                   to={"/admin/login"}
                   className="bg-transparent text-black text-xs md:text-lg md:py-2 md:px-4 p-2 border border-black rounded"
                 >
-                  Login
+                  Admin Login
                 </Link>
-                <Link
-                  to={"/admin/signup"}
-                  className="bg-transparent text-black text-xs md:text-lg md:py-2 md:px-4 p-2 border border-black rounded"
-                >
-                  Signup
-                </Link>
+                
               </>
             )}
           </div>
